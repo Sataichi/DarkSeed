@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1708e419c37e44e2b8bd8099da8d9798, type: 3}
+  m_Name: DashData
+  m_EditorClassIdentifier: Assembly-CSharp::DarkSeed.Core.Data.DashScriptable
+  _dashDuration: 0.8
+  _dashPower: 24
+  _dashCooldown: 0.1
+  dashVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.3
+      inSlope: 3.183948
+      outSlope: 3.183948
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.06680584
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: -0.04049706
+      outSlope: -0.04049706
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.2818371
+    - serializedVersion: 3
+      time: 0.90349454
+      value: 0.7105912
+      inSlope: -2.0322022
+      outSlope: -2.0322022
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.102310285
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -12.381517
+      outSlope: -12.381517
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.12979737
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
