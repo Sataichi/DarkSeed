@@ -12,6 +12,8 @@ namespace DarkSeed.Core.Controls
         protected float _dashCooldown;
         protected AnimationCurve _dashVelocityCurve;
 
+        public bool IsInterrupted { get; protected set; }
+
         public Dash(DashScriptable data)
         {
             _dashDuration = data.DashDuration;
@@ -21,5 +23,15 @@ namespace DarkSeed.Core.Controls
         }
 
         public abstract IEnumerator StartDash(Rigidbody rb, Action<float> callback);
+
+        public void InterruptDash()
+        {
+            IsInterrupted = true;
+        }
+
+        protected void ResetInterruption()
+        {
+            IsInterrupted = false;
+        }
     }
 }

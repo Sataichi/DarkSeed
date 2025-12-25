@@ -13,9 +13,11 @@ namespace DarkSeed.Core.Managers
     public class PlayerDashManager : IInitializable, IDisposable, IGamePausable
     {
         private static readonly int DashProperty = Animator.StringToHash("Dashing");
+        private static readonly int DashInterrupted = Animator.StringToHash("DashInterrupted");
 
         private IMovementController _playerMovementController;
         private CoroutineHolder _coroutineHolder;
+        private Player _player;
         private Rigidbody _playerRigidbody;
         private Animator _playerAnimator;
         private Dash _dash;
@@ -33,6 +35,8 @@ namespace DarkSeed.Core.Managers
         {
             _playerMovementController = playerMovementController;
             _coroutineHolder = coroutineHolder;
+
+            _player = player;
             _playerRigidbody = player.GetComponent<Rigidbody>();
             _playerAnimator = player.GetComponentInChildren<Animator>();
             _dash = dash;
@@ -44,6 +48,7 @@ namespace DarkSeed.Core.Managers
         {
             _dashAction = InputSystem.actions.FindAction("Dash");
             _dashAction.performed += DoDash;
+            _player.CollisionWithObstacleOccured += OnObstacleCollisionOccured;
         }
 
         private void DoDash(InputAction.CallbackContext ctx)
@@ -58,6 +63,14 @@ namespace DarkSeed.Core.Managers
             _playerMovementController.DisableMovementRequest();
 
             _coroutineHolder.StartCoroutine(_dash.StartDash(_playerRigidbody, DoDashCallback));
+        }
+
+        private void OnObstacleCollisionOccured()
+        {
+            if (!_isDashing)
+                return;
+
+            _dash.InterruptDash();
         }
 
         private void DoDashCallback(float dashCooldown)
@@ -84,6 +97,7 @@ namespace DarkSeed.Core.Managers
         public void Dispose()
         {
             _dashAction.performed -= DoDash;
+            _player.CollisionWithObstacleOccured -= OnObstacleCollisionOccured;
         }
     }
 }
