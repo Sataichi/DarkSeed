@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Страница-1" id="_yjWbwVmt5M3OsqHQOhO">
+    <mxGraphModel dx="1042" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I30g0C01hrsgFcxOkaaz-2" parent="1" style="rounded=0;align=right;spacing=2;html=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;PlayerSubContainer&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="340" width="470" x="260" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-4" edge="1" parent="1" source="I30g0C01hrsgFcxOkaaz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="I30g0C01hrsgFcxOkaaz-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-5" connectable="0" parent="I30g0C01hrsgFcxOkaaz-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="On Instantiate&lt;div&gt;SubConatiner created&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.125" y="-1" as="geometry">
+            <mxPoint x="1" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Player" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-20" edge="1" parent="1" source="I30g0C01hrsgFcxOkaaz-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="I30g0C01hrsgFcxOkaaz-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="240" />
+              <mxPoint x="440" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-21" connectable="0" parent="I30g0C01hrsgFcxOkaaz-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Links with Camera" vertex="1">
+          <mxGeometry relative="1" x="0.104" y="1" as="geometry">
+            <mxPoint x="-4" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CameraWrapper" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-11" edge="1" parent="1" source="I30g0C01hrsgFcxOkaaz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="I30g0C01hrsgFcxOkaaz-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Movement" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-12" edge="1" parent="1" source="I30g0C01hrsgFcxOkaaz-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="I30g0C01hrsgFcxOkaaz-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-15" connectable="0" parent="I30g0C01hrsgFcxOkaaz-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Controls" vertex="1">
+          <mxGeometry relative="1" x="0.7609" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BodyRotation" vertex="1">
+          <mxGeometry height="60" width="120" x="454" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-14" edge="1" parent="1" source="I30g0C01hrsgFcxOkaaz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="I30g0C01hrsgFcxOkaaz-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-22" connectable="0" parent="I30g0C01hrsgFcxOkaaz-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Controls" vertex="1">
+          <mxGeometry relative="1" x="0.235" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Dash" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PlayerMovementManager" vertex="1">
+          <mxGeometry height="60" width="150" x="350" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PlayerDashManager" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-18" edge="1" parent="1" source="I30g0C01hrsgFcxOkaaz-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="I30g0C01hrsgFcxOkaaz-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-19" connectable="0" parent="I30g0C01hrsgFcxOkaaz-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Links with Player" vertex="1">
+          <mxGeometry relative="1" x="-0.32" y="3" as="geometry">
+            <mxPoint x="26" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I30g0C01hrsgFcxOkaaz-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Camera" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
